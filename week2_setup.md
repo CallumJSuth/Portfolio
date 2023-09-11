@@ -23,18 +23,29 @@ Finally, I was tasked with cloning our group repository and linking my Github ac
 # Screenshots 
 
 1.
-<img src="images/ss1-1.png" >
+<img src="images/ss1-1.png"  width="500" height="600">
+
 2.
+<img src="images/ss1-2.png"  width="500" height="600">
 
 3.
+<img src="images/ss1-3.png"  width="500" height="600">
 
 4.
+<img src="images/ss1-4.png"  width="500" height="600">
 
 5.
+<img src="images/ss1-5.png"  width="500" height="600">
 
 6.
+<img src="images/ss1-6.png"  width="500" height="600">
 
 7.
+<img src="images/ss1-7.png"  width="500" height="600">
 
 8.
+<img src="images/ss1-8.png"  width="500" height="600">
 
+## Additional Notes 
+
+This is my first time with all of these materials, programs and github itself so if anything has been formatted incorrectly or isn't up-to-par, I will happily take any criticism or help. 
