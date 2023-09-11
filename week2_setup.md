@@ -18,7 +18,7 @@ I was required to set up Visual Studio from scratch as I had never worked with i
 
 Furthermore, creating a portfolio on Github for posting my work was required. This is shown in screenshot (Six) or just by going to the main page of this repository. 
 
-Finally, I was tasked with cloning our group repository and linking my Github account to VS. For the first task, it was a simple process of just taking the HTML link and giving it to VS code (Show in screenshot (Seven) ) . And for the second, all that needed done was changing my account information to match the email and password of my Github account, which is shown in screenshot (Eight).   
+Finally, I was tasked with cloning our group repository and linking my Github account to VS. For the first task, it was a simple process of just taking the HTML link and giving it to VS code (Show in screenshot (Seven) ) . And for the second, all that needed done was changing my account information to match the email and username of my Github account, which is shown in screenshot (Eight).   
 
 # Screenshots 
 
