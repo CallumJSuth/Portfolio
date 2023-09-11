@@ -22,10 +22,19 @@ Finally, I was tasked with cloning our group repository and linking my Github ac
 
 # Screenshots 
 
+1.
+<img src="images/ss1-1.jpg"  width="500" height="600">
+2.
 
+3.
 
+4.
 
+5.
 
+6.
 
+7.
 
+8.
 
