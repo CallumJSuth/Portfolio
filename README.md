@@ -8,7 +8,7 @@ As my education carrer progresses you'll find a range of projects, each showcasi
 
 Let's get started, and I hope you enjoy exploring my work!
 
-Best,
+
 Callum Sutherland
 
 ## Contents
