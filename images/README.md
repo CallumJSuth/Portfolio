@@ -1,3 +1,3 @@
 # Images folder
 
-To keep your portfolio tidy, place all images in this folder
+Image folder in order to de-clutter my portfolio 
