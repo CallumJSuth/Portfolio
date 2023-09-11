@@ -23,7 +23,7 @@ Finally, I was tasked with cloning our group repository and linking my Github ac
 # Screenshots 
 
 1.
-<img src="images/ss1-1.jpg"  width="500" height="600">
+<img src="images/ss1-1.png"  width="500" height="600">
 2.
 
 3.
