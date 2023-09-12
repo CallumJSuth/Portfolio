@@ -23,7 +23,7 @@ Finally, I was tasked with cloning our group repository and linking my Github ac
 # Screenshots 
 
 1.
-<img src="images/ss1-1.png"  >
+![image](https://github.com/CallumJSuth/Portfolio/images/ss1-1.png)
 
 2.
 <img src="images/ss1-2.png"  >
