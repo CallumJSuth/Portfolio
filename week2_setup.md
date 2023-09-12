@@ -27,25 +27,25 @@ Finally, I was tasked with cloning our group repository and linking my Github ac
 
 
 2.
-<img src="images/ss1-2.png"  >
+![image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss1-2.png)
 
 3.
-<img src="images/ss1-3.png"  >
+![image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss1-3.png)
 
 4.
-<img src="images/ss1-4.png"  >
+![image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss1-4.png)
 
 5.
-<img src="images/ss1-5.png"  >
+![image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss1-5.png)
 
 6.
-<img src="images/ss1-6.png"  >
+![image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss1-6.png)
 
 7.
-<img src="images/ss1-7.png"  >
+![image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss1-7.png)
 
 8.
-<img src="images/ss1-8.png"  >
+![image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss1-8.png)
 
 ## Additional Notes 
 
