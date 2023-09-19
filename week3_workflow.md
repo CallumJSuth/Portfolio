@@ -22,3 +22,6 @@ This week, our group was tasked with choosing an appropriate work flow, implemen
 We choose the recommended workflow of Github Flow. 
 
 We were also tasked with individually getting more familar with Github's workflow tools, allowing us to more easily utilise the resourses Github offers. This consisted of showing that we were able to use the following processes : 
+
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-2.png)
+
