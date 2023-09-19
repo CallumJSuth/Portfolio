@@ -25,3 +25,13 @@ We were also tasked with individually getting more familar with Github's workflo
 
 ![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-2.png)
 
+# Proof of Work
+
+## ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Workflow Tools
+
+
+## Completing a Task
+
+
