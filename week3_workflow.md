@@ -48,3 +48,7 @@ While working on this task, I used Github's tools through Visual Studio. This wa
 Firstly, I created a branch in order to deviate my changes from the main code and then later push these changes to the main repository. :
 
 ![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-5.png)
+
+After this branch was created, I moved onto creating my table name using an SQL command. You can see this in the screenshot below, as well as the table being created on the left(Underlined in red) : 
+
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-6.png)
