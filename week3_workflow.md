@@ -29,7 +29,16 @@ We were also tasked with individually getting more familar with Github's workflo
 
 ## ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Workflow Tools
+## Progressing through project 
+
+As seen below, I decided to go with "Maintain Refereance Values For System Types" as the task I would be working on : 
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-3.png)
+
+I first moved this task to the in development list and assigned it to myself before I started in order to ensure no one else in my team was attempting to complete the same task as me : 
+
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-4.png)
+
+As I progressed on with my task (Further details in section below ) I proceeded to move the task through each appropriate stage 
 
 
 ## Completing a Task
