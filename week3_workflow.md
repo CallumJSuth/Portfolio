@@ -43,4 +43,8 @@ As I progressed on with my task (Further details in section below ) I proceeded 
 
 ## Completing a Task
 
+While working on this task, I used Github's tools through Visual Studio. This was purely for easy of access and simplicity while working on the given job. 
+
+Firstly, I created a branch in order to deviate my changes from the main code and then later push these changes to the main repository. :
+
 
