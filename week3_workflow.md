@@ -49,6 +49,25 @@ Firstly, I created a branch in order to deviate my changes from the main code an
 
 ![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-5.png)
 
-After this branch was created, I moved onto creating my table name using an SQL command. You can see this in the screenshot below, as well as the table being created on the left(Underlined in red) : 
+Once this branch had been created the first thing I did was create the stucture of my database and named it "structureSTRV.cs". This will outline how data is stored and indexed. I got the template for this structure from the support files already provided from my repo. 
 
-![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-6.png)
+![Image]()
+
+Once this was done, I created the database itself by following the provided tutorial and appropriately editing the fields to match my files. The only real change I made to the provided code was the remove of the line that required a boolean value in order to check if there was a value in the field. 
+
+![Image]()
+
+Next I organised my file structure and created the files I would be using throughout this project as well as the project page. During this stage I created the xaml file that would house the code for my value editing UI as well as the backend for it. These files are called STRV.xaml and STRV.xaml.cs respectably. 
+
+![Image]()   
+
+Due to me pulling this code from our group repository early, I also had to create a constants.cs file. This has been added to our repo since but I thought it was worth mentioning. 
+
+![Image]()
+
+Now I moved onto coding my page itself. I used many resources and got help from coursemates ( Daniel Miller was exceptionally helpful, big thank you to him) in order to create this code. It follows a basic structure using buttons and the "Picker" tag in order to display a short list of values to choose from in order to meet the requirements specifed in my chosen task. 
+
+![Image]()
+
+
+
