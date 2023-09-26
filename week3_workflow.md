@@ -38,7 +38,9 @@ I first moved this task to the in development list and assigned it to myself bef
 
 ![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-4.png)
 
-As I progressed on with my task (Further details in section below ) I proceeded to move the task through each appropriate stage 
+As I progressed on with my task (Further details in section below ) I proceeded to move the task through each appropriate stage. 
+
+Moving the task to the "In Review" section was the next step as by this point in development I had finished my code and was ready to begin testing and optimsations. 
 
 
 ## Completing a Task
@@ -65,9 +67,29 @@ Due to me pulling this code from our group repository early, I also had to creat
 
 ![Image]()
 
-Now I moved onto coding my page itself. I used many resources and got help from coursemates ( Daniel Miller was exceptionally helpful, big thank you to him) in order to create this code. It follows a basic structure using buttons and the "Picker" tag in order to display a short list of values to choose from in order to meet the requirements specifed in my chosen task. 
+Now I moved onto coding my UI itself. I used many resources and got help from coursemates ( Daniel Miller was exceptionally helpful, big thank you to him) in order to create this code. It follows a basic structure using buttons and the "Picker" tag in order to display a short list of values to choose from. These values can be interacted with in order to meet the requirements specifed in my chosen task. 
 
 ![Image]()
 
+I am skipping over a lot of debugging and tinkering however for the purpores of this portfolio talking about every issue I ran into would drag on for far too long. However at this stage my UI and backend database has been completed and I am ready to start testing my program and it's functions. Dispite being simple, my UI meets all of the requirements of my task and is presented clearly. 
+
+![Image]()
+
+At this stage I am moving onto testing. Further information about this stage can be found in the section below. 
+
+
+
+
+
+
+Now my development task has been completed on my branch I can start looking at commiting my changes and submmiting a pull request with apprioate comments. 
+
+## Testing 
+
+When approching testing, there is little to actually be tested. The above screenshots already prove that my UI loads corretly so the only thing I really have to test is the functionality of my Databaase and Ui. 
+
+Below is a link to a Word Document that shows my testing processes : 
+
+![Testing Document](https://1drv.ms/w/s!AvGyrAKUKVKFgpge0wyXF_cgTx1-zA?e=UMpzMa)
 
 
