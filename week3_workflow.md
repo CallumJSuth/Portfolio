@@ -27,15 +27,15 @@ As I progressed on with my task (Further details in section below ) I proceeded 
 
 Moving the task to the "In Review" section was the next step as by this point in development I had finished my code and was ready to begin testing and optimizations. 
 
-![Image]()
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-7.png)
 
 Next was the testing stage once I was done reviewing the code. 
 
-![Image)()
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-8.png)
 
 And finally to the done section once everything had been completed and I was ready to submit this portfolio. 
 
-![Image]()
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-9.png)
 
 
 ## Completing a Task
@@ -48,29 +48,29 @@ Firstly, I created a branch in order to deviate my changes from the main code an
 
 Once this branch had been created the first thing I did was create the structure of my database and named it "structureSTRV.cs' '. This will outline how data is stored and indexed. I got the template for this structure from the support files already provided from my repo. 
 
-![Image]()
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-10.png)
 
 Once this was done, I created the database itself by following the provided tutorial and appropriately editing the fields to match my files. The only real change I made to the provided code was the removal of the line that required a boolean value in order to check if there was a value in the field. 
 
-![Image]()
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-11.png)
 
 Next I organised my file structure and created the files I would be using throughout this project as well as the project page. During this stage I created the xaml file that would house the code for my value editing UI as well as the backend for it. These files are called STRV.xaml and STRV.xaml.cs respectively. 
 
-![Image]()   
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-15.png)   
 
 Due to me pulling this code from our group repository early, I also had to create a constants.cs file. This has been added to our repository since but I thought it was worth mentioning. 
 
-![Image]()
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-12.png)
 
 Now I moved onto coding my UI itself. I used many resources and got help from coursemates ( Daniel Miller was exceptionally helpful, big thank you to him) in order to create this code. It follows a basic structure using buttons and the "Picker'' tag in order to display a short list of values to choose from. These values can be interacted with in order to meet the requirements specified in my chosen task. 
 
-![Image]()
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-13.png)
 
-![Image]()
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-14.png)
 
 I am skipping over a lot of debugging and tinkering however for the purposes of this portfolio talking about every issue I ran into would drag on for far too long. However at this stage my UI and backend database has been completed and I am ready to start testing my program and its functions. Despite being simple, my UI meets all of the requirements of my task and is presented clearly. 
 
-![Image]()
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-16.png)
 
 At this stage I am moving onto testing. Further information about this stage can be found in the section below. 
 
@@ -80,7 +80,7 @@ The last thing to cover before moving on is the Definition of Done (DoD). Due to
 
 Now my development task has been completed on my branch I can start looking at committing my changes and submitting a pull request with appropriate comments. This will be the last step of my portfolio entry. 
 
-![Image]()
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/pullRequest.png)
 
 
 
