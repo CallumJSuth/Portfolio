@@ -25,6 +25,8 @@ We were also tasked with individually getting more familiar with Github's workfl
 
 ![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss2-2.png)
 
+
+
 # Proof of Work
 
 ## ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -41,6 +43,16 @@ I first moved this task to the in development list and assigned it to myself bef
 As I progressed on with my task (Further details in section below ) I proceeded to move the task through each appropriate stage. 
 
 Moving the task to the "In Review" section was the next step as by this point in development I had finished my code and was ready to begin testing and optimizations. 
+
+![Image]()
+
+Next was the testing stage once I was done reviewing the code. 
+
+![Image)()
+
+And finally to the done section once everything had been completed and I was ready to submit this portfolio. 
+
+![Image]()
 
 
 ## Completing a Task
@@ -63,11 +75,13 @@ Next I organised my file structure and created the files I would be using throug
 
 ![Image]()   
 
-Due to me pulling this code from our group repository early, I also had to create a constants.cs file. This has been added to our repo since but I thought it was worth mentioning. 
+Due to me pulling this code from our group repository early, I also had to create a constants.cs file. This has been added to our repository since but I thought it was worth mentioning. 
 
 ![Image]()
 
 Now I moved onto coding my UI itself. I used many resources and got help from coursemates ( Daniel Miller was exceptionally helpful, big thank you to him) in order to create this code. It follows a basic structure using buttons and the "Picker'' tag in order to display a short list of values to choose from. These values can be interacted with in order to meet the requirements specified in my chosen task. 
+
+![Image]()
 
 ![Image]()
 
@@ -81,8 +95,11 @@ At this stage I am moving onto testing. Further information about this stage can
 The last thing to cover before moving on is the Definition of Done (DoD). Due to the length of time it has taken me to complete this task(Never working with C# before) all of my code has been rigorously bug tested and analysed as I spend quite a long time on it, so the unit test coverage is easily above 80%. All of the required criteria have been met to my knowledge, I cannot see any defects in my code either and my documentation is up to date. As for functionality testing, I have a section below which covers that. Definition of Done has been met.   
 
 
+Now my development task has been completed on my branch I can start looking at committing my changes and submitting a pull request with appropriate comments. This will be the last step of my portfolio entry. 
 
-Now my development task has been completed on my branch I can start looking at committing my changes and submitting a pull request with appropriate comments. 
+![Image]()
+
+
 
 ## Testing 
 
