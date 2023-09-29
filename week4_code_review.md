@@ -1,4 +1,4 @@
-##Code Used for Review : 
+## Code Used for Review : 
 ```
 public void Register(string username, string password){ 
   var salt = CreateSalt(); 
@@ -16,7 +16,7 @@ public bool Login(string username, string password){
   return false; 
 }
 ```
-##Optimised/Fixed Code: 
+## Optimised/Fixed Code: 
 ```
 public void Register(string username, string password)
 {
