@@ -15,29 +15,6 @@ content that is generated from your code to illustrate your explanation.
 Finally, highlight three examples from your code where you have eliminated the need
 for comments by adhering to the principles of clean code.
 
-# Code Referenced  
-```
- public void Register(string username, string password)
-{
-    var (hashedPassword, salt) = HashPasswordWithSalt(password);
-    SaveToDatabase(username, hashedPassword, salt);
-}
-
-public bool Login(string username, string password)
-{
-    var user = GetUserFromDatabase(username);
-    var hashedPassword = HashPassword(password, user.Salt);
-    return user.HashedPassword == hashedPassword;
-}
-
-private (string HashedPassword, string Salt) HashPasswordWithSalt(string password)
-{
-    var salt = CreateSalt();
-    var hashedPassword = HashPassword(password, salt);
-    return (hashedPassword, salt);
-}
-```
-
 # Clean Code Rules
 
 ## Rules used 
@@ -52,24 +29,33 @@ private (string HashedPassword, string Salt) HashPasswordWithSalt(string passwor
 
 5. Consistent Formatting and Indentation
 
-6. Keep Lines of Code Short and Concise
+6. Comments for Clarity, Not Explanation
 
 ## Examples in my code
 
-1. Good examples of this rule in my code are Register, Login, HashPasswordWithSalt, hashedPassword, salt, and user. These are all clearly named and the purpose is evident at a glance.
+1. A good example of this in my code is the method names for my buttons and other processes for my UI. newValueButton_Clicked, UpdateValueButton_Clicked, deleteValueButton_Clicked and UpdateValueList all show this rule as they are clearly named based on their purpose.
 
-2. Looking at my functions shows that they all have a clear purpose and don't stray from their responsibility. Register is responsible for registering a user, Login for user authentication, and HashPasswordWithSalt for password hashing.
+2. Again, the best example of this is my button methods(newValueButton_Clicked, UpdateValueButton_Clicked, deleteValueButton_Clicked). Each method has clear code which only pretains to it's associated use and nothing else.
 
-3. As pointed out in my prior portfoilo entry, I spend time making sure there was no repeated code. HashPasswordWithSalt removed the need to repeat the password hashing logic.
+3. UndacDatabaseSTRV.cs shows an avoidance of repeated code. This because of the methods GetItemsAsync, SaveItemAsync and DeleteItemAsync. These methods are called whenever data needs to be manipulated or read from the backend database. This means code doesn't have to be repeated everytime the database is accessed.
 
-4. Due to the size of my code, all of my functions are easy to read and understand. This is mostly shown in Register as only two methods are called in order to get the desired outcome.
+4. GetItemsAsync, SaveItemAsync and DeleteItemAsync are good examples of this as they only have a few lines of code each and successfully preform database manipulation.
 
-5. Indentation is used throughout in order to make sure my code is readable and easy to understand. This formatting stays consistent throughout.
+5. All formatting throughout my code is consistant throughout. Code is spaced and organised in a way that is easy to read and understand.
 
-6. This is shown throughout my code, as all methods are relatively short and don't leave room for much errors. 
+6. Comments are used but not overused in my code, they provided descriptions of elements of my code without being too indepth or overexplaning things.
 
-## Implementation of Rule 
+## How code implements the rule
 
-1. This is implemented by giving clear names to variables and methods (e.g. HashPasswordWithSalt, hashedPassword, user...)
+1. By appropriately naming variables and methods based on what they pretain to.
 
-2. I have used this rule in my code by  
+2. By making sure each method sticks to it's required use and doesn't have code which could cause confusion.
+
+3. By creating methods that are specific to each required use and not adding in code that could be used again.
+
+4. All though my code has bigger methods, most of them are small and compact in order to increase readability. Even for the bigger functions, there is no filler code or code that could be removed (As far as I can tell ).
+
+5. By keeping a consistent indention pattern throughout all of my files and code.
+
+6. By adding comments that simply explain aspects of my code wihtout being confusing or overexplaining.
+
