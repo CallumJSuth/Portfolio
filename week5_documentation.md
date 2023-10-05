@@ -59,3 +59,88 @@ for comments by adhering to the principles of clean code.
 
 6. By adding comments that simply explain aspects of my code wihtout being confusing or overexplaining.
 
+# Doxygen Comments 
+
+## Constants Class
+
+```
+/// <summary>
+/// Provides constants used in the application.
+/// </summary>
+public static class Constants
+{
+    // ...
+}
+
+```
+
+<summary>: This comment provides a summary of the purpose of the Constants class. It describes that the class is used for storing constants used in the application.
+
+## UndacDatabaseSTRV Class
+
+```
+/// <summary>
+/// Provides database operations for the 'structureSTRV' table.
+/// </summary>
+public class UndacDatabaseSTRV
+{
+    // ...
+}
+
+```
+
+<summary>: This comment provides a summary of the purpose of the UndacDatabaseSTRV class. It states that the class is responsible for performing database operations related to the 'structureSTRV' table.
+InitDatabase Method
+
+## InitDatabase Method
+
+```
+/// <summary>
+/// Initializes the SQLite database connection.
+/// </summary>
+/// <returns>An asynchronous task.</returns>
+async Task InitDatabase()
+{
+    // ...
+}
+
+```
+
+<summary>: This comment explains the purpose of the InitDatabase method. It mentions that the method is responsible for initializing the SQLite database connection.
+<returns>: This tag describes the return value of the method, which is an asynchronous task.
+
+## GetItemsAsync Method
+
+```
+/// <summary>
+/// Gets all items from the 'structureSTRV' table.
+/// </summary>
+/// <returns>A list of 'structureSTRV' items.</returns>
+public async Task<List<structureSTRV>> GetItemsAsync()
+{
+    // ...
+}
+
+```
+
+<summary>: This comment describes the purpose of the GetItemsAsync method, which is to retrieve all items from the 'structureSTRV' table.
+<returns>: This tag specifies that the method returns a list of 'structureSTRV' items.
+
+## structureSTRV Class
+
+```
+/// <summary>
+/// Represents a structure stored in the 'values' table.
+/// </summary>
+[Table("values")]
+public class structureSTRV
+{
+    // ...
+}
+
+```
+
+<summary>: This comment provides an overview of the purpose of the structureSTRV class. It mentions that the class represents a structure stored in the 'values' table.
+[Table("values")]: This tag is a C# attribute, but it is included in the comment to explain that the class is mapped to a table named "values" in the database.
+
+
