@@ -74,7 +74,7 @@ public class UndacDatabaseSTRV
 
 This comment provides a summary of the purpose of the UndacDatabaseSTRV class. It states that the class is responsible for performing database operations related to the 'structureSTRV' table.
 
-[Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss3-1.png)
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss3-1.png)
 
 
 ## InitDatabase Method
@@ -113,7 +113,7 @@ This comment describes the purpose of the GetItemsAsync method, which is to retr
 
 returns : This tag specifies that the method returns a list of 'structureSTRV' items.
 
-[Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss3-2.png)
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss3-2.png)
 
 ## structureSTRV Class
 
@@ -133,7 +133,7 @@ summary : This comment provides an overview of the purpose of the structureSTRV 
 
 [Table("values")] : This tag is a C# attribute, but it is included in the comment to explain that the class is mapped to a table named "values" in the database.
 
-[Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss3-3.png)
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss3-3.png)
 
 
 # Clean Code 
