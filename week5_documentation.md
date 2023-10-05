@@ -90,7 +90,7 @@ public class UndacDatabaseSTRV
 ```
 
 This comment provides a summary of the purpose of the UndacDatabaseSTRV class. It states that the class is responsible for performing database operations related to the 'structureSTRV' table.
-InitDatabase Method
+
 
 ## InitDatabase Method
 
@@ -125,6 +125,7 @@ public async Task<List<structureSTRV>> GetItemsAsync()
 ```
 
 This comment describes the purpose of the GetItemsAsync method, which is to retrieve all items from the 'structureSTRV' table.
+
 returns : This tag specifies that the method returns a list of 'structureSTRV' items.
 
 ## structureSTRV Class
@@ -142,6 +143,7 @@ public class structureSTRV
 ```
 
 summary : This comment provides an overview of the purpose of the structureSTRV class. It mentions that the class represents a structure stored in the 'values' table.
+
 [Table("values")] : This tag is a C# attribute, but it is included in the comment to explain that the class is mapped to a table named "values" in the database.
 
 
