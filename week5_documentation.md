@@ -147,3 +147,11 @@ summary : This comment provides an overview of the purpose of the structureSTRV 
 [Table("values")] : This tag is a C# attribute, but it is included in the comment to explain that the class is mapped to a table named "values" in the database.
 
 
+# Clean Code 
+
+One example of my code not needing code is the ID Property. Because of the prior comments on the structureSTRV Class, it would be unnessassry to explain what this property does as it is already clear just from the surronding code. 
+
+The "picker" object I use in order to show dropdown boxes on my UI is another example of a section of code that wouldn't benfit from comments. Due to the data inside this object, it is already clear what it's use is and comments would only take up space.  
+
+Finally is the DatabasePath method. This one has already explained by its name and only has one line of code that contains the database path itself. Comments here would be overkill.  
+
