@@ -1,20 +1,3 @@
-# Documentation
-
-This section is related to your work on clean code and documentation in week 5.
-
-First, choose six rules of clean code and explain them. For each one,
-
-* Summarise the rule in your own words.
-* Provide an example from the code that you wrote in week 2 and then refined in week 4.
-* Explain how your code implements the rule. 
-
-Second, copy the doxygen comments from your code into your portfolio and provide some 
-descriptive commentary on their purpose and structure. Use screenshots showing the HTML 
-content that is generated from your code to illustrate your explanation.
-
-Finally, highlight three examples from your code where you have eliminated the need
-for comments by adhering to the principles of clean code.
-
 # Clean Code Rules
 
 ## Rules used 
@@ -91,6 +74,8 @@ public class UndacDatabaseSTRV
 
 This comment provides a summary of the purpose of the UndacDatabaseSTRV class. It states that the class is responsible for performing database operations related to the 'structureSTRV' table.
 
+[Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss3-1.png)
+
 
 ## InitDatabase Method
 
@@ -128,6 +113,8 @@ This comment describes the purpose of the GetItemsAsync method, which is to retr
 
 returns : This tag specifies that the method returns a list of 'structureSTRV' items.
 
+[Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss3-2.png)
+
 ## structureSTRV Class
 
 ```
@@ -145,6 +132,8 @@ public class structureSTRV
 summary : This comment provides an overview of the purpose of the structureSTRV class. It mentions that the class represents a structure stored in the 'values' table.
 
 [Table("values")] : This tag is a C# attribute, but it is included in the comment to explain that the class is mapped to a table named "values" in the database.
+
+[Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss3-3.png)
 
 
 # Clean Code 
