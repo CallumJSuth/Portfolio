@@ -74,7 +74,7 @@ Secondly, my other tests were run on the method required for chosing the game di
 
 ## Explanation of Test Code
 
-### Public Setup Test 
+### Setup Test 
 
 The test method, "Test_CreateNewChallengeEasy_SetWordProperty()", checks how a new game challenge is created with the "Easy" difficulty setting on a "GamePage" object. This method is public and confirms that the "Word" property is correctly set after creating the challenge.
 
@@ -93,8 +93,20 @@ By executing “gamePage.SelectWord("Medium")”, the test calls the SelectWord 
 Lastly, the line “Assert.True(selectedWord.Length <= expectedMaxLength)” is an assertion using the Assert class. It uses the Assert.True method to confirm that the length of the selectedWord string is less than or equal to the expectedMaxLength. If this is successful, it means that the SelectWord method works correctly for the "Medium" difficulty level, ensuring that the selected word's length is within the limits provided.
 
 
-
-
 ## Reason for Test
 
-## Limitations of Test
+### Setup Test 
+
+This test method is designed to verify whether the process of creating a new game challenge with the "Easy" difficulty level, as the code in the GamePage class shows, correctly sets the 'Word' property to a non-null value. The primary purpose is to ensure that the game setup for the "Easy" difficulty level is functioning as expected, guaranteeing that a valid 'Word' variable is successfully passed once the code is run. 
+
+
+### Medium Code Test
+
+Next, this test method is tasked with confirming that the SelectWord method within the GamePage class correctly selects a word with a length that adheres to the maximum expected length for the "Medium" difficulty level. By specifying the maximum length, this test aims to validate that the game logic for word selection in the "Medium" difficulty mode works without flaws, ensuring that the chosen word's length complies with the defined length.
+
+
+## Limitations of Tests
+
+These tests have some problems. They only look at small parts of the GamePage class and don't consider the program as a whole. They also don't utilize fixed settings, which means they might not work well in a different environment. They don't check for user entry mistakes or any other of the ususal things you would test for . They only look at good results and don't show how the class works in more complicated and realistic situations. Finally, they only test a small part of the class, so more tests might be needed.
+
+
