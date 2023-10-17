@@ -74,6 +74,27 @@ Secondly, my other tests were run on the method required for chosing the game di
 
 ## Explanation of Test Code
 
+### Public Setup Test 
+
+The test method, "Test_CreateNewChallengeEasy_SetWordProperty()", checks how a new game challenge is created with the "Easy" difficulty setting on a "GamePage" object. This method is public and confirms that the "Word" property is correctly set after creating the challenge.
+
+When "gamePage.CreateNewChallenge();" is called, it triggers the "CreateNewChallenge" method in the "gamePage" object. This method is responsible for starting a new game challenge and is the first step in loading the game itself.
+
+Finally, the code "Assert.NotNull(gamePage.Word);" checks if the "Word" property in the "gamePage" object is null or not. This allows the program to know that "Word" has been set correctly as well as making sure that the "Easy" level challenge is working properly.
+
+### Medium Code Test
+
+The purpose of the test method “Test_SelectWord_ReturnValidWordForMedium(int expectedMaxLength)“ is to check if the SelectWord method behaves correctly in the "Medium" difficulty level. It verifies if the length of the word selected by the GamePage object is within the expected maximum length.
+
+Next, the line “GamePage gamePage = new GamePage("Medium")” creates a new instance of the GamePage class and assigns it to the variable gamePage. This object is configured with the "Medium" difficulty level, setting up the initial conditions for the test.
+
+By executing “gamePage.SelectWord("Medium")”, the test calls the SelectWord method within the gamePage object which is the main code that is getting tested. 
+
+Lastly, the line “Assert.True(selectedWord.Length <= expectedMaxLength)” is an assertion using the Assert class. It uses the Assert.True method to confirm that the length of the selectedWord string is less than or equal to the expectedMaxLength. If this is successful, it means that the SelectWord method works correctly for the "Medium" difficulty level, ensuring that the selected word's length is within the limits provided.
+
+
+
+
 ## Reason for Test
 
 ## Limitations of Test
