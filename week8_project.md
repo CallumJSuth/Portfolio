@@ -19,3 +19,22 @@ the various dimensions of software engineering into your practice. It should inc
 
 Be sure to include links to the original items in the team's GitHub repository.
 
+
+## Summary of Issue 
+
+
+
+## Code and Commentary 
+
+```
+
+```
+
+## Summary of Test Code
+
+## Review Changes 
+
+## Issues That Arose
+
+## Reflection of Weekly Work 
+
