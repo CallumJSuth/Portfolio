@@ -23,3 +23,21 @@ In the reflective sections this week, you should highlight ways that you persona
 has improved as before. It would also be good to reflect on any improvements that have
 been made to the agreed team workflow and related procedures. Are things working
 better than they were? What further improvements could be made in the future?
+
+## Summary of Issue 
+
+
+
+## Code and Commentary 
+
+```
+
+```
+
+## Summary of Test Code
+
+## Review Changes 
+
+## Issues That Arose
+
+## Reflection of Weekly Work 
