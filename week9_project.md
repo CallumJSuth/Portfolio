@@ -28,3 +28,22 @@ This could include, for example,
 * Adoption of a more systematic personal workflow.
 * Improved identification of problems in other people's code.
 * etc.
+
+
+## Summary of Issue 
+
+
+
+## Code and Commentary 
+
+```
+
+```
+
+## Summary of Test Code
+
+## Review Changes 
+
+## Issues That Arose
+
+## Reflection of Weekly Work 
