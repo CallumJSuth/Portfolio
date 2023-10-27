@@ -22,13 +22,41 @@ Be sure to include links to the original items in the team's GitHub repository.
 
 ## Summary of Issue 
 
+The UNDAC Deputy Team Leader needs to regularly check the available resources to insure the mission going smoothly. This helps ensure the mission's long-term success. To make this happen, users should be able to easily access and sort the data.  
+
+There will be four values that each resource will have. Name, quantity, resource type and where it is stored. Resource type and storage location will be used to filter the data by the data they contain.
 
 
 ## Code and Commentary 
-
+### Code Example One
 ```
+                <ListView.Header>
+                    <!-- Column definitions and labels. -->
+                    <Grid>
+                        
+                        <!-- Define four columns with equal width for displaying data. -->
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                        </Grid.ColumnDefinitions>
 
+                        <!-- Column labels -->
+                        <Label Grid.Column="0" Text="Resource Name" FontAttributes="Bold" />
+                        
+                        <Label Grid.Column="1" Text="Resource Type" FontAttributes="Bold" />
+                        
+                        <Label Grid.Column="2" Text="Storage Location" FontAttributes="Bold" />
+
+                        <Label Grid.Column="3" Text="Quantity" FontAttributes="Bold" />
+                        
+                    </Grid>
+                </ListView.Header>
 ```
+In this section of code, I make use of a couple of good software desgin practices. Firstly is good code readability. All of the elements are spaced out and easily understandable, allowing for any future changes to be implemented easier and quicker. Comments are used by only where they are needed, having the column widths and lables in their own section means that not every element has to be explained as it is already clear what they do.  
+
 
 ## Summary of Test Code
 
