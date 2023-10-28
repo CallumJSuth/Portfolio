@@ -57,9 +57,43 @@ There will be four values that each resource will have. Name, quantity, resource
 ```
 In this section of code, I make use of a couple of good software desgin practices. Firstly is good code readability. All of the elements are spaced out and easily understandable, allowing for any future changes to be implemented easier and quicker. Comments are used by only where they are needed, having the column widths and lables in their own section means that not every element has to be explained as it is already clear what they do.  
 
+Consistency is shown in the grid definitions being all the same size. This allows the UI to be balanced and appealing to users.I made the decsion to make the column lables bold for the same reason. Labels also have relevent names and can be easily identifed at a glance which helps a lot as code scales. 
+
+### Code Example 2 
+
+```
+        public List<string> StorageLocations { get; set; } // Holds storage locations as strings.
+
+        private string SelectedStorageLocation;  // Holds the selected storage location.
+
+        // Getter and setter for SelectedStorageLocation.
+        public string SelectedStorageLocation
+        {
+            get { return SelectedStorageLocation; }
+            set
+            {
+                // Checking if the new value is different from the current value.
+                if (SelectedStorageLocation != value)
+                {
+                    // Update the selected storage location.
+                    SelectedStorageLocation = value;
+
+                    // Notify that the SelectedStorageLocation property has changed.
+                    OnPropertyChanged(nameof(SelectedStorageLocation));
+
+                    // Call the FilterData method to update the data based on the selected storage location.
+                    FilterData();
+                }
+            }
+        }
+```
+This example of code is more comment heavy but that is due to the fact there are more complicated processes going on here that can't be easily understood. Because of this, I felt like adding more comments makes the code require less knowlage of the program as a whole to understand. Therefore this is a good example of code readabilty. 
+
+Variables are named in a way that makes it easy to understand what there purpose is. StorageLocatiom amd SelectedStorageLocation make it clear that there is a link between them but that they are still easily told apart. 
+
 
 ## Summary of Test Code
-
+`
 ## Review Changes 
 
 ## Issues That Arose
