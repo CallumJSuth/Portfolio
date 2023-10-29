@@ -100,9 +100,15 @@ One main issue were flagged when my code got the review stage. This was that due
 
 This was a simple error to make and an obvious one however I had been more focused on testing and making my code work in the development stage that I skipped right past it. Dispite this, it taught me a good lession about code modularity and the importance of thinking ahead when creating elements in relation to the data or other element it may need access to at some point. 
 
+
 ## Issues That Arose
 
-A lot of issues arose when it came to creating this project, unfortunately,  
+To the best of my abilty as a program as of right now, I could not find any real issues or code discrepancies. I wish I had something to write here but I do not. The only change I ended up suggesting was that two of their methods serverd very similar purposes and could be combined in order to help future proof the code a bit. But this change isn't applicable on the size of the applications we are working on. 
 
 ## Reflection of Weekly Work 
+
+A lot of issues arose when it came to creating this project, unfortunately,  nearly all the result of my Visual Studio not wanting to play nice with NuGet extension. It took days before anything started working again and the only reason I bring this up is it made me change my code a lot to attempt some form of work around. I did not know what was causing problems and ended up troubleshooting my code and making use of a lot of breakpoints to see what was happening individually. As painfully annoying the problems I ran into were, I will admit it gave me a better understanding of the tools Visual Studio has at it's disposal. There is still a lot I have to learn about VS, but I am also learning more everyday. 
+
+Mainly, my biggest takeaway from a coders' perspective that I had this week was the overwhelming importantance of modularity. Having code set up in a way that isolates and specfies each element, the data it uses and any initializations creates an infinitely better block of code to work with. It allows for not only an easier understanding of the code but also makes it easier to edit and test. 
+
 
