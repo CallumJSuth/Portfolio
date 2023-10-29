@@ -1,25 +1,3 @@
-# Project work 1
-
-In week 8, you are exercising all the principles and techniques that have been discussed 
-in the module so far. Your portfolio entry should demonstrate your ability to integrate 
-the various dimensions of software engineering into your practice. It should include 
-
-* A descriptive summary of the issue that you worked on.
-* Snippets from your code with commentary showing how you have used good software design 
-  practice.
-* A descriptive summary of the test code that you have written.
-* A reflective summary of any changes that were requested during the code review along 
-  with your fixes.
-* A descriptive summary of any issues you found with the code that you were asked to review.
-* A general reflective section that identifies, for example,
-  * New things you have realised this week
-  * Common problems that can arise in a team development situation
-  * How your practice compares to other people's
-  * etc.
-
-Be sure to include links to the original items in the team's GitHub repository.
-
-
 ## Summary of Issue 
 
 The UNDAC Deputy Team Leader needs to regularly check the available resources to insure the mission going smoothly. This helps ensure the mission's long-term success. To make this happen, users should be able to easily access and sort the data.  
@@ -141,5 +119,9 @@ To the best of my abilty as a program as of right now, I could not find any real
 A lot of issues arose when it came to creating this project, unfortunately,  nearly all the result of my Visual Studio not wanting to play nice with NuGet extension. It took days before anything started working again and the only reason I bring this up is it made me change my code a lot to attempt some form of work around. I did not know what was causing problems and ended up troubleshooting my code and making use of a lot of breakpoints to see what was happening individually. As painfully annoying the problems I ran into were, I will admit it gave me a better understanding of the tools Visual Studio has at it's disposal. There is still a lot I have to learn about VS, but I am also learning more everyday. 
 
 Mainly, my biggest takeaway from a coders' perspective that I had this week was the overwhelming importantance of modularity. Having code set up in a way that isolates and specfies each element, the data it uses and any initializations creates an infinitely better block of code to work with. It allows for not only an easier understanding of the code but also makes it easier to edit and test. 
+
+## Orignal Issue Screenshot 
+
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss4-1.png)
 
 
