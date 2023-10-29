@@ -93,7 +93,38 @@ Variables are named in a way that makes it easy to understand what there purpose
 
 
 ## Summary of Test Code
-`
+
+### updateValueTest
+```
+    public void updateValueTest()
+    {
+        // Creating relevent variables
+        var page = new MissionResourcesPage();
+        string newValue = "Food";
+
+        // Assigning new value
+        page.SelectedResourceType = newValue;
+
+        // Assert
+        Assert.Equal(newValue, page.SelectedResourceType);
+    }
+```
+To ensure  SelectedResourceType property update in MissionResourcesPage is working, a test is run. This test works by creating an instance of MissionResourcesPage and the assignment of a new value, such as "Food," for the SelectedResourceType property. The test then verifies if the property accurately reflects the newly assigned value.
+
+### 
+```
+    public void defaultStates()
+    {
+        // Creating relevent variables
+        var page = new MissionResourcesPage();
+
+        // Assert
+        Assert.Equal("All", page.SelectedResourceType);
+        Assert.Equal("All", page.SelectedStorageLocation);
+    }
+```
+This test ensures that when MissionResourcesPage is initialized, it sets the SelectedResourceType and SelectedStorageLocation variables to the default values of "All." It verifies that these properties are properly setup with the expected base data, which helps make sure the application's starts reliably.
+
 ## Review Changes 
 
 One main issue were flagged when my code got the review stage. This was that due to the order in which I was initializing the elements of my code, only one of the filter boxes were being populated with data. This meant that all through it was able to display and sort the data, it would only work with storage location and not the type of resource. After this issue had been pointed out it was as easy as reorganising my code so it was loading and pulling data correctly. 
