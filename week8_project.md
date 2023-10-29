@@ -96,7 +96,13 @@ Variables are named in a way that makes it easy to understand what there purpose
 `
 ## Review Changes 
 
+One main issue were flagged when my code got the review stage. This was that due to the order in which I was initializing the elements of my code, only one of the filter boxes were being populated with data. This meant that all through it was able to display and sort the data, it would only work with storage location and not the type of resource. After this issue had been pointed out it was as easy as reorganising my code so it was loading and pulling data correctly. 
+
+This was a simple error to make and an obvious one however I had been more focused on testing and making my code work in the development stage that I skipped right past it. Dispite this, it taught me a good lession about code modularity and the importance of thinking ahead when creating elements in relation to the data or other element it may need access to at some point. 
+
 ## Issues That Arose
+
+A lot of issues arose when it came to creating this project, unfortunately,  
 
 ## Reflection of Weekly Work 
 
