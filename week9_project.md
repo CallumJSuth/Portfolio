@@ -52,8 +52,35 @@ The aim of this task is to allow users to easily see the health, location, and c
             </StackLayout>
 ```
 
-This is the frontend code for each search bar this is required. This has two good examples of good coding practice, more specfically good UI design. The first of which is the addition of Placeholder text. This Placeholder text allows the user to clearly see what each search bar does in a simple and easy to understand way without the need for any extra unnecessary formatting. 
+This is the frontend code for each search bar this is required. This has two good examples of good coding practice, more specfically good UI design. The first of which is the addition of placeholder text. This placeholder text allows the user to clearly see what each search bar does in a simple and easy to understand way without the need for any extra unnecessary formatting. 
 
+Secondly, is the appropriate naming of each entry. Giving each individual entry it's own name allows for good code readabilty. This means that when any future changes are needed, it will be a lot easier to make those changes now it is clear what all of elements are. 
+
+```
+        private void OnSearchTextChanged(object sender, TextChangedEventArgs e)
+        {
+            // Convert the search text to lowercase
+            var searchText = e.NewTextValue.ToLower();
+
+            // Filter the data based on search criteria 
+            FilteredVehicleDescription = new ObservableCollection<VehicleInfo>(
+                VehicleDescription.Where(v =>
+                    v.VehicleReg.ToLower().Contains(searchText) ||
+                    v.Health.ToString().Contains(searchText) ||
+                    v.VehicleLocation.ToLower().Contains(searchText) ||
+                    v.CurrentDeployment.ToLower().Contains(searchText))
+            );
+
+            // Update the ListView's ItemsSource with the filtered data
+            ListView.ItemsSource = FilteredVehicleDescription;
+        }
+```
+
+This is the backend code for the above frontend code.  Firstly, the search text is immediately converted to lowercase and also converted relevant properties to lowercase during comparison, ensuring a case-insensitive search, which is a good practice for user-friendly search functionality and preemptively avoids any user-input errors.
+
+Another easy to point out example of good pratice is the clear and descriptive name of the method. From a glance it is easy to understand the purpose and subsequent function of this method.  
+
+Finally, the use of "ObservableCollection" allows the fields shown to the user to be updated instantly as they are searching. This allows the UI to have real-time updates as the user is searching, meaning a good response between the elements and the user's needs. User experience is greatly improved by this level of responsiveness. 
 
 ## Summary of Test Code
 
