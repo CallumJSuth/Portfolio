@@ -44,8 +44,28 @@ The aim of this task is to allow users to easily see the health, location, and c
 
 ## Review Changes 
 
+During my review this week, I received feedback regarding my data binding. The primary change that was suggested was to address the issues arising from the design of my code, which were getting in the way of the data displaying properly. 
+
+I dealt with this by simply adding one line of code to my backend .cs file. 
+```
+...
+BindingContext = this;
+...
+```
+This allowed my data on my Main .xaml page to properly access the data in the backend and display it properly. 
+
+It was also suggested that I made my search bars more readable. I acomplished this by changing their orientation from horizontal to vertical (Allowing the search bars to be more easily read) and adding a label above each search box in order explain its purpose more clearly. 
+
 ## Issues That Arose
+
+The code I reviewed this week for checking stock levels of existing mission resources. It seems to meet the user and business goals, but there are a couple of things that need attention:
+
+Sorting Option: The code allows for filtering resources by type and storage location, but it doesn't have a way to sort them. It would be great to add a sorting feature so that the resource list can be organized by quantity, location, or other relevant criteria. This will give a more detailed overview.
+
+User-Friendly Interface: The code should prioritize creating a user-friendly interface to make it easy for users to understand the mission resources' overview. The current UI that is being used isn't tailered towards someone who didn't have a good understanding of the code itself. Changing the layout and adding temporary text to the search boxes in order to show what they do. 
+
+
 
 ## Reflection of Weekly Work 
 
-This wweeks work has been a great reflections of the skills I learned last week. After having a lot of problems with VS and my code in general, I decided to take a slower approch to coding this porgram in order to give myself a better strucutre and understanding of the code I was creating. Making sure to aggragate 
+This wweeks work has been a great reflections of the skills I learned last week. After having a lot of problems with VS and my code in general, I decided to take a slower approch to coding this porgram in order to give myself a better strucutre and understanding of the code I was creating. As I mentioned last week, modularity was my main focus as it had caused me problems last week. I was successful in creating code which was better structured and more understandable. 
