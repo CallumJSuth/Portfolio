@@ -37,8 +37,23 @@ The aim of this task is to allow users to easily see the health, location, and c
 ## Code and Commentary 
 
 ```
+            <!-- Changed Horizontal StackLayout for search bars -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                
+                <!-- Entries for each individual search bar (VehicleReg, Health, Location,Deployment-->
+                <Entry Placeholder="Search Vehicle Registration" x:Name="VehicleRegSearch" TextChanged="OnSearchTextChanged"/>
 
+                <Entry Placeholder="Search Health" x:Name="HealthSearch" TextChanged="OnSearchTextChanged"/>
+
+                <Entry Placeholder="Search Location" x:Name="LocationSearch" TextChanged="OnSearchTextChanged"/>
+
+                <Entry Placeholder="Search Deployment" x:Name="DeploymentSearch" TextChanged="OnSearchTextChanged"/>
+                
+            </StackLayout>
 ```
+
+This is the frontend code for each search bar this is required. This has two good examples of good coding practice, more specfically good UI design. The first of which is the addition of Placeholder text. This Placeholder text allows the user to clearly see what each search bar does in a simple and easy to understand way without the need for any extra unnecessary formatting. 
+
 
 ## Summary of Test Code
 
@@ -58,11 +73,11 @@ It was also suggested that I made my search bars more readable. I acomplished th
 
 ## Issues That Arose
 
-The code I reviewed this week for checking stock levels of existing mission resources. It seems to meet the user and business goals, but there are a couple of things that need attention:
+The code I reviewed this week for checking stock levels of existing mission resources. It seems to meet the user and business goals, but there are a couple of things that need attention.
 
-Sorting Option: The code allows for filtering resources by type and storage location, but it doesn't have a way to sort them. It would be great to add a sorting feature so that the resource list can be organized by quantity, location, or other relevant criteria. This will give a more detailed overview.
+Adding a sorting option: The code allows for filtering resources by type and storage location, but it doesn't have a way to sort them. It would be great to add a sorting feature so that the resource list can be organized by quantity, location, or other relevant criteria. This will give a more detailed overview.
 
-User-Friendly Interface: The code should prioritize creating a user-friendly interface to make it easy for users to understand the mission resources' overview. The current UI that is being used isn't tailered towards someone who didn't have a good understanding of the code itself. Changing the layout and adding temporary text to the search boxes in order to show what they do. 
+UI : The code should prioritize creating a user-friendly interface to make it easy for users to understand the mission resources' overview. The current UI that is being used isn't tailered towards someone who didn't have a good understanding of the code itself. Changing the layout and adding temporary text to the search boxes in order to show what they do. 
 
 
 
