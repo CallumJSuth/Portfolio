@@ -32,7 +32,7 @@ This could include, for example,
 
 ## Summary of Issue 
 
-
+The aim of this task is to allow users to easily see the health, location, and current assignment of team vehicles and equipment for mission objectives. The objective is to offer a  summary of mission vehicles and guarantee their accessibility for both support and operational tasks. The most important aspect of this program is to have a free-text search function which allows user's to search for data in each individual field. 
 
 ## Code and Commentary 
 
@@ -47,3 +47,5 @@ This could include, for example,
 ## Issues That Arose
 
 ## Reflection of Weekly Work 
+
+This wweeks work has been a great reflections of the skills I learned last week. After having a lot of problems with VS and my code in general, I decided to take a slower approch to coding this porgram in order to give myself a better strucutre and understanding of the code I was creating. Making sure to aggragate 
