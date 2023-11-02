@@ -24,6 +24,8 @@ This is the frontend code for each search bar this is required. This has two goo
 
 Secondly, is the appropriate naming of each entry. Giving each individual entry it's own name allows for good code readabilty. This means that when any future changes are needed, it will be a lot easier to make those changes now it is clear what all of elements are. 
 
+## ---------------------------------------
+
 ```
         private void OnSearchTextChanged(object sender, TextChangedEventArgs e)
         {
