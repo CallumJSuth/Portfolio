@@ -111,6 +111,6 @@ UI : The code should prioritize creating a user-friendly interface to make it ea
 
 This wweeks work has been a great reflections of the skills I learned last week. After having a lot of problems with VS and my code in general, I decided to take a slower approch to coding this porgram in order to give myself a better strucutre and understanding of the code I was creating. As I mentioned last week, modularity was my main focus as it had caused me problems last week. I was successful in creating code which was better structured and more understandable. 
 
-## Screenshot of orignal issue 
+## Screenshot of Orignal Issue 
 
 ![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss5-1.png)
