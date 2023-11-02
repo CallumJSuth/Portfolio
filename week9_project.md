@@ -84,6 +84,38 @@ Finally, the use of "ObservableCollection" allows the fields shown to the user t
 
 ## Summary of Test Code
 
+```
+    public void CollectionInit()
+    {
+        // Setting Page variable
+        var page = new MainPage(); // Constructor will be tested
+
+        // Checking correct initalization 
+        Assert.NotNull(page.VehicleDescription);
+        Assert.NotNull(page.FilteredVehicleDescription);
+
+
+    }
+```
+
+This test makes sure that the MainPage class constructor properly initializes the VehicleDescription and FilteredVehicleDescription collections. It confirms that these collections are not null once the constructor is called. This is crucial to extremly important that the constructor sets up the MainPage object's initial state as intended and that the collections can be used for future data changes.
+
+```
+    public void SuccessfulCopying()
+    {
+        // Arrange
+        var page = new MainPage();
+
+        // Act
+
+        // Assert
+        Assert.Equal(page.VehicleDescription.Count, page.FilteredVehicleDescription.Count);
+
+        // You can add more assertions to compare the data in both collections if needed
+    }
+```
+This test checks if the constructor accurately duplicates the data from the VehicleDescription collection to the FilteredVehicleDescription collection. It compares the counts of both collections to show they have the same number of elements, meaning that the data has been successfully copied. This is crucial because it guarantees that the two collections are  identical, enabling later data manipulation of one collection without impacting the other.
+
 ## Review Changes 
 
 During my review this week, I received feedback regarding my data binding. The primary change that was suggested was to address the issues arising from the design of my code, which were getting in the way of the data displaying properly. 
