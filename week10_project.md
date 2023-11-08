@@ -96,6 +96,10 @@ In my coding process, I've used the power of data binding, allowing the labels i
 
 ## Reflection of Weekly Work 
 
+As this is the final week I will talk about the last three weeks of progress here. When I began this course I had no conception of how to use Visual Studio, C# or .net MAUI but looking back on the past three weeks of work, I can confidently say that my skills not only in these areas have improved but my skills as a program as well. It became aparent during my development time in week eight that I wasn't creating code that was easy for anyone other than me to understand or edit. Now, with the mixture of the team project and completing the weekly tasks I feel like I can confidently say that has changed. My main focus the past week has been on improving my code modulaity and I have met that goal. This week, being the final week of tasks, showed that fact to me the best. The difference in development time between week eight and week ten is massive as well as the overall quailty of my code. 
+
+Being able to actually practice coding has been a massive help these past few weeks and has helped me understand a lot about coding at a higher level. All through there are still problems I run into when I code(Mostly VS not playing nice), I feel like I can more easily handle these problems due to my better understanding of this project and coding in general. Working on this issue was similar to the last one I tackled so I spent extra time attempting to find different ways to code it and looking at different fetures I could add. A lot of these additional features were removed due to me wanting to keep my code simple and to the point but it was still fun to explore different avenues of coding and other proccesses.   
+
 ## Issue in Team Repo
 
 ![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss6-1.png)
