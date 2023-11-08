@@ -32,7 +32,56 @@ The main point of this issue is to efficiently find and invite the right partner
 ## Code and Commentary 
 
 ```
+    public partial class MainPage : ContentPage
+    {
+        // Define two ObservableCollections to store PartnersInfo objects
+        public ObservableCollection<PartnersInfo> PartnersDescription { get; set; }
+        public ObservableCollection<PartnersInfo> FilteredPartnersDescription { get; set; }
 
+        // Constructor for the MainPage class
+        public MainPage()
+        {
+            // Initialize the PartnersDescription ObservableCollection with PartnersInfo objects
+            PartnersDescription = new ObservableCollection<PartnersInfo>
+        {
+            // Adding PartnersInfo objects with defined properies (Placeholder Data) 
+            new PartnersInfo
+            {
+                agencyName = "Savers LTD",
+                agencyType = "National",
+                associationStatus = "Requested",
+                Location = "Syria"
+            },
+        ...
+```
+The code I've provided this week reflects my prior commitment to maintain clean and modular code. As you can see from the given example, I've chosen to use meaningful variable and class names, such as PartnersDescription and PartnersInfo, which make the code more readable and self-explanatory. By utilizing ObservableCollection, I've ensured efficient data management and responsiveness which is not only good for pratical application but also makes it really easy to manually test all values stored. This way of coding shows how I have been attempting to optimise application performance and improve end user satisfaction.
+
+Additionally, this code shows my ablity initializing data structures, as shown in the constructor within the MainPage class. I've included comments to explain the purpose of various code sections, aiding in code readability and making it accessible to others. By following these coding conventions, I've created a baseline for scalable and easily maintainable code, which would undoubtedly appeal to any further developers looking to work on my code. My commitment to good coding practices has enabled me to create a robust and well-structured application which I am proud of.
+
+```
+                    <DataTemplate>
+                        <ViewCell>
+                            <!-- This is used to customize the appearance of a cell in the ListView -->
+                            <Grid>
+
+                                <!-- Defining the four columns in the grid with identical widths-->
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Labels in each column to display data from the bound properties -->
+                                <Label Grid.Column="0" Text="{Binding agencyName}"/>
+                                <Label Grid.Column="1" Text="{Binding agencyType}"/>
+                                <Label Grid.Column="2" Text="{Binding associationStatus}"/>
+                                <Label Grid.Column="3" Text="{Binding Location}"/>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
 ```
 
 ## Summary of Test Code
@@ -42,3 +91,7 @@ The main point of this issue is to efficiently find and invite the right partner
 ## Issues That Arose
 
 ## Reflection of Weekly Work 
+
+## Issue in Team Repo
+
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss6-1.png)
