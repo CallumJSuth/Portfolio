@@ -92,7 +92,15 @@ In my coding process, I've used the power of data binding, allowing the labels i
 
 ## Review Changes 
 
+During the process of code reviews this week, one of the improvements that was suggested was adding more declerations for each of my elements making sure the are named appropriately. This was an easy fix as all that I ended up doing was going through each of my elements and providing names for all of them using the "x:Name..." attribute to unnamed elements. On top of this it was also recommended that I changed my "associationSatus" to Camel case instead of Pascal as I had named it "AssociationStatus" while not really thinking about it. Again, an easy fix and this helped me pay more attention to the naming conventions I used for my future variables. 
+
+Another suggestion was made but for the scope of this project me and the reviewer agreed that it wasn't really required. Changing my grid layout to be based on the screen size rather than pre-set sizes/formatting. The reason we decided it wasn't worth implementing was due to the fact a lot of work would need to be done on the project as a whole to make this section work all different screen sizes / platforms and without the changes it would lead to only the gird scaling correctly and nothing else.  
+
 ## Issues That Arose
+
+When looking at the code I had to review this week, the main element of there code was a map feature. The only problem I found with it was it didn't contain any function for zooming in and out of the map. This meant the map was only visable from one point and any indiviudal parts of the map couldn't be isolated. It wasn't a hard problem to deal with and I imagine it was fixed quickly. 
+
+The other issue I found was a lack of error handling. There was no code that would catch any errors relating to the network or data retrival. This is a problem as no matter the size of the program, if run in an enviroment where either of these errors may show up it will immediately crash with no real clear information on why or how. 
 
 ## Reflection of Weekly Work 
 
