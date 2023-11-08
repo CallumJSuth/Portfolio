@@ -25,7 +25,7 @@ been made to the agreed team workflow and related procedures. Are things working
 better than they were? What further improvements could be made in the future?
 
 ## Summary of Issue 
-
+The main point of this issue is to efficiently find and invite the right partner agencies to join their team, while the business aims to give their teams access to external resources . To achieve this, the system needs to meet a set of criteria, like showing partner agencies with their current association status (requested, denied, confirmed, pending, N/A, etc), providing easy access to agency details, allowing full-text search to filter the agency list, and letting users easily clear any applied filters. In essence, the system should make it easier to identify, engage, and manage partner agencies, improving efficiency and access to external resources and support for the organization.
 
 
 ## Code and Commentary 
