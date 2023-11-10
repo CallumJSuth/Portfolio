@@ -90,6 +90,42 @@ In my coding process, I've used the power of data binding, allowing the labels i
 
 ## Summary of Test Code
 
+```
+        public void noTextSearch()
+        {
+            // Setting example data and arranging test
+            var mainPage = new MainPage();
+            mainPage.PartnersDescription = new ObservableCollection<PartnersInfo>
+            {
+                new PartnersInfo
+                {
+                    agencyName = "TestAgency1",
+                    agencyType = "TestType1",
+                    associationStatus = "TestStatus1",
+                    Location = "TestLocation1"
+                },
+                new PartnersInfo
+                {
+                    agencyName = "TestAgency2",
+                    agencyType = "TestType2",
+                    associationStatus = "TestStatus2",
+                    Location = "TestLocation2"
+                }
+            };
+
+            // Setting variable of blank search 
+            var searchText = string.Empty; 
+
+            // Running test code through actual code
+            mainPage.OnSearchTextChanged(this, new TextChangedEventArgs("", searchText));
+
+            // Asserting
+            Assert.Equal(2, mainPage.FilteredPartnersDescription.Count);
+        }
+```
+
+In this weeks test , I created a enviroment to test the behavior of the OnSearchTextChanged method when there is no text in the input box. I set up an instance of the MainPage class and added two example PartnersInfo objects to its PartnersDescription "ObservableCollection". Then, I provided an empty search variable for the search function. When I called the OnSearchTextChanged method to trigger the search, I expected the FilteredPartnersDescription to contain all the items from the PartnersDescription since there is no search filter applied. To confirm this, I checked that the count of items in FilteredPartnersDescription is equal to 2, showing that all items are displayed when the search text is empty. This test ensures that the application handles and displays data correctly when there is no search input in the provided box.
+
 ## Review Changes 
 
 During the process of code reviews this week, one of the improvements that was suggested was adding more declerations for each of my elements making sure the are named appropriately. This was an easy fix as all that I ended up doing was going through each of my elements and providing names for all of them using the "x:Name..." attribute to unnamed elements. On top of this it was also recommended that I changed my "associationSatus" to Camel case instead of Pascal as I had named it "AssociationStatus" while not really thinking about it. Again, an easy fix and this helped me pay more attention to the naming conventions I used for my future variables. 
