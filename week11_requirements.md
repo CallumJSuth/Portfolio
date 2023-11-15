@@ -1,5 +1,5 @@
 
-# Portfolio Entry: Week 11 - Access Reinstatement Feature
+# Week 11
 
 ## Issue Summary
 This week's focus was on the feature of reinstating system access for users returning to the team. The goal was to ensure controlled access and robust data security, with the Deputy Team Leader required to approve access reinstatements.
@@ -38,10 +38,8 @@ private void RequestAccessButton_Click(object sender, RoutedEventArgs e)
 ```
 In the corresponding C# code, `RequestAccessButton_Click` function captures the user ID from the text box and checks if the user is a returning member. Depending on this check, it sends an approval request or denies access.
 
-## Test Code and Summary - C# xUnit
-Implemented C# unit tests using the xUnit framework to validate the functionality of the access reinstatement process.
+## Test Code
 
-### Test Code in
 ```
 public class AccessReinstatementTests
 {
@@ -60,7 +58,6 @@ public class AccessReinstatementTests
     }
 }
 ```
-These tests ensure that the access reinstatement request behaves as expected for both returning members and non-members, maintaining the integrity and security of our system.
 
 These tests are to ensure access reinstatement effectively checks requests from team members who are coming back and securely rejects those who are not members, making sure the system remains secure. It verifies that the system can effectively manage access control while maintaining a balance between reintegrating users and ensuring strong data security. This thorough testing approach strengthens the system's security and prioritises the end users of this program.
 
