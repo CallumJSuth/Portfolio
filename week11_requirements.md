@@ -61,7 +61,7 @@ public class AccessReinstatementTests
 
 These tests are to ensure access reinstatement effectively checks requests from team members who are coming back and securely rejects those who are not members, making sure the system remains secure. It verifies that the system can effectively manage access control while maintaining a balance between reintegrating users and ensuring strong data security. This thorough testing approach strengthens the system's security and prioritises the end users of this program.
 
-## Code Review and Fixes
+## Code Review 
 Feedback from the code review highlighted the need for better handling of the Deputy Team Leader's dynamic ID. I addressed this by implementing a more flexible solution in the C# code to accommodate changes in leadership roles.
 
 ## Peer Code Review
