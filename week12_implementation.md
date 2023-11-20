@@ -27,3 +27,6 @@ consider your own practice and team processes. In addition, this is a good point
 include your thoughts on the general challenges related to working in a software
 development team and the most effective methods to streamline operations and to safeguard
 the quality of the end product.
+
+## Screenshot of Issue 
+![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss8-1.png)
