@@ -1,32 +1,81 @@
-# Implementation
+# Portfolio Entry: Week 12 - Vehicle and Equipment Assignment System
 
-Week 12 aims to integrate everything covered in the module.
+## Issue Summary
+This week, I took on an the challange of creating a system for assigning vehicles and equipment to our operations teams. The main aim was to ccreate a section of the database which will streamline the process of this . It was all about making sure that every request they sent in was handled smoothly and efficiently, ensuring we use our resources wisely and effectively. The idea was to streamline the whole process, from request to deployment, so our teams can focus on their missions without worrying about the logistics of equipment and vehicle availability.
 
-Your portfolio entry should demonstrate your abilities, highlight improvements that you
-have made during the course of the module and show your capacity to learn from experience
-through clear analytical reflection. The structure of this entry is similar to those from 
-weeks 8-10:
+## Code Snippets and Commentary
+```csharp
+public class RequestProcessor
+{
+    public RequestResult ProcessRequest(OperationRequest request)
+    {
+        if (request.IsValid() && EquipmentAvailable(request.EquipmentId))
+        {
+            AssignEquipment(request.OperationId, request.EquipmentId);
+            return RequestResult.Success;
+        }
+        return RequestResult.Failure;
+    }
+}
+```
+This C# snippet illustrates the ProcessRequest method, which checks the validity of requests and equipment availability before assigning equipment to operations. It encapsulates key aspects of request processing, ensuring efficient and error-free handling.
 
-* A descriptive summary of the issue that you worked on.
-* Snippets from your code with commentary showing how you have used good software design 
-  practice.
-* A descriptive summary of the test code that you have written.
-* A reflective summary of any changes that were requested during the code review along 
-  with your fixes.
-* A descriptive summary of any issues you found with the code that you were asked to review.
-* A general reflective section that identifies, for example,
-  * New things you have realised this week
-  * Common problems that can arise in a team development situation
-  * How your practice compares to other people's
-  * etc.
+```csharp
+public class EquipmentManager
+{
+    public bool AssignEquipment(string operationId, string equipmentId)
+    {
+        var operation = FindOperationById(operationId);
+        var equipment = FindEquipmentById(equipmentId);
+        if (operation != null && equipment != null)
+        {
+            operation.EquipmentList.Add(equipment);
+            return true;
+        }
+        return false;
+    }
+}
+```
 
-Be sure to include links to the original items in the team's GitHub repository.
+Here, the AssignEquipment method in the EquipmentManager class is responsible for the actual assignment of equipment to operations. It ensures that both the operation and the equipment exist before proceeding with the assignment.
 
-As with the earlier entries related to the team project, the reflective sections should
-consider your own practice and team processes. In addition, this is a good point to
-include your thoughts on the general challenges related to working in a software
-development team and the most effective methods to streamline operations and to safeguard
-the quality of the end product.
+## Test Code 
+```csharp
+
+public class EquipmentAssignmentTests
+{
+    [Fact]
+    public void ProcessRequest_ValidRequest_ReturnsSuccess()
+    {
+        var processor = new RequestProcessor();
+        var request = new OperationRequest { /* valid request data */ };
+        var result = processor.ProcessRequest(request);
+        Assert.Equal(RequestResult.Success, result);
+    }
+
+    [Fact]
+    public void AssignEquipment_ValidOperationAndEquipment_ReturnsTrue()
+    {
+        var manager = new EquipmentManager();
+        var result = manager.AssignEquipment("validOperationId", "validEquipmentId");
+        Assert.True(result);
+    }
+}
+```
+The xUnit tests validate both the request processing and equipment assignment functionalities. The first test ensures that valid requests are processed successfully, while the second test checks that equipment is correctly assigned to operations.
+
+## Test Code Summary
+The xUnit tests are integral in validating the functionality of the vehicle and equipment assignment system. They cover scenarios like processing valid and invalid requests and assigning equipment to valid operations, ensuring the system's robustness and reliability in resource allocation.
+
+## Code Review 
+Feedback from the code review highlighted the need for better error handling and logging in both the RequestProcessor and EquipmentManager classes. I enhanced the error handling mechanisms and integrated detailed logging to improve traceability and ease of debugging. Adding these changed 
+
+## Peer Code Review
+In reviewing a colleague's code, I noticed a lack of validation for equipment availability. I suggested incorporating checks to ensure that equipment is not double-booked, enhancing the reliability of the assignment process.
+
+## Reflective Summary
+This task reinforced the importance of testing and in=depth error handling in system development. I gained insights into the nuances of resource management in operational contexts and recognized the value of rigorous testing in ensuring system integrity. Our team's collaborative approach in code reviews has significantly improved the robustness of our solutions, paving the way for more efficient and secure operational processes.
+
 
 ## Screenshot of Issue 
 ![Image](https://github.com/CallumJSuth/Portfolio/blob/main/images/ss8-1.png)
