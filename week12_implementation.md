@@ -47,25 +47,110 @@ public class EquipmentAssignmentTests
     [Fact]
     public void ProcessRequest_ValidRequest_ReturnsSuccess()
     {
+        // Arrange
         var processor = new RequestProcessor();
         var request = new OperationRequest { /* valid request data */ };
+
+        // Act
         var result = processor.ProcessRequest(request);
+
+        // Assert
         Assert.Equal(RequestResult.Success, result);
+    }
+
+    [Fact]
+    public void ProcessRequest_InvalidRequest_ReturnsFailure()
+    {
+        // Arrange
+        var processor = new RequestProcessor();
+        var request = new OperationRequest { /* invalid request data */ };
+
+        // Act
+        var result = processor.ProcessRequest(request);
+
+        // Assert
+        Assert.Equal(RequestResult.Failure, result);
     }
 
     [Fact]
     public void AssignEquipment_ValidOperationAndEquipment_ReturnsTrue()
     {
+        // Arrange
         var manager = new EquipmentManager();
-        var result = manager.AssignEquipment("validOperationId", "validEquipmentId");
+        var operationId = "validOperationId";
+        var equipmentId = "validEquipmentId";
+
+        // Act
+        var result = manager.AssignEquipment(operationId, equipmentId);
+
+        // Assert
         Assert.True(result);
     }
+
+    [Fact]
+    public void AssignEquipment_OperationNotFound_ReturnsFalse()
+    {
+        // Arrange
+        var manager = new EquipmentManager();
+        var operationId = "nonExistentOperationId";
+        var equipmentId = "validEquipmentId";
+
+        // Act
+        var result = manager.AssignEquipment(operationId, equipmentId);
+
+        // Assert
+        Assert.False(result);
+    }
+
+    [Fact]
+    public void AssignEquipment_EquipmentNotFound_ReturnsFalse()
+    {
+        // Arrange
+        var manager = new EquipmentManager();
+        var operationId = "validOperationId";
+        var equipmentId = "nonExistentEquipmentId";
+
+        // Act
+        var result = manager.AssignEquipment(operationId, equipmentId);
+
+        // Assert
+        Assert.False(result);
+    }
+
+    [Theory]
+    [InlineData("validOperationId", "")]
+    [InlineData("", "validEquipmentId")]
+    [InlineData("", "")]
+    public void AssignEquipment_InvalidParameters_ReturnsFalse(string operationId, string equipmentId)
+    {
+        // Arrange
+        var manager = new EquipmentManager();
+
+        // Act
+        var result = manager.AssignEquipment(operationId, equipmentId);
+
+        // Assert
+        Assert.False(result);
+    }
+
+    // Additional tests can be written to cover edge cases, such as:
+    // - Assigning equipment that is already assigned to another operation
+    // - Handling of concurrent requests for the same equipment
+    // - Timeouts and error handling in case of database failures
 }
+
 ```
 The xUnit tests validate both the request processing and equipment assignment functionalities. The first test ensures that valid requests are processed successfully, while the second test checks that equipment is correctly assigned to an operation.
 
 ## Test Code Summary
-The xUnit tests are integral in validating the functionality of the vehicle and equipment assignment system. They cover scenarios like processing valid and invalid requests and assigning equipment to valid operations, ensuring the system's robustness and reliability in resource allocation.
+
+I've expanded our xUnit test suite this week to cover a spectrum of scenarios, from handling legitimate requests to dealing with potential errors like missing operations or equipment, and even incorrect input parameters. I took advantage of xUnit's [Theory] and [InlineData] attributes to run tests across a variety of input combinations, which has bolstered the robustness of our testing procedures.
+
+I organized the tests using the Arrange-Act-Assert pattern, which has brought clarity and structure to the test cases. This approach has improved the readability and maintenance of our tests by clearly separating the setup phase, the execution of the functionality we're testing, and the subsequent result verification.
+
+By thoroughly testing for a wide array of conditions, I've bolstered our confidence in the resilience and reliability of our code. This comprehensive testing is crucial, as it ensures that we're prepared for different operational realities and that our system behaves as expected, no matter the situation.
+
+I plan to continue refining these tests, adding additional cases for edge conditions and specific behaviors unique to our system that may not yet be covered. It's this thorough and critical approach to testing that underpins robust and reliable software development.
 
 ## Code Review 
 Feedback from the code review highlighted the need for better error handling and logging in both the RequestProcessor and EquipmentManager classes. I enhanced the error handling mechanisms and integrated detailed logging to improve traceability and ease of debugging. Adding these helped my code as a whole and allowed for better modularity.  
